@@ -44,7 +44,7 @@ class Central:
                 print("Valor invalido...")
             else:
                 desconto = int(input("Digite o desconto(%): "))
-                if 0 < desconto < 100:
+                if -1 < desconto < 101:
                     self_desc = valor * (desconto / 100)
                     valor_original = valor
                     valor = valor - self_desc
