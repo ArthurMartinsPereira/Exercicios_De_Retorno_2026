@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 28/10/26">
-      <change afterPath="$PROJECT_DIR$/Atividade_29-10.py" afterDir="false" />
+    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 29/10/26">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Atividade_27-10.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade_27-10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade_29-10.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade_29-10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +51,7 @@
     &quot;Python.Atividade_25-10.executor&quot;: &quot;Run&quot;,
     &quot;Python.Atividade_26-10.executor&quot;: &quot;Run&quot;,
     &quot;Python.Atividade_27-10.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Atividade_29-10.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
@@ -87,7 +87,9 @@
       <workItem from="1793153202129" duration="2230000" />
       <workItem from="1793200548735" duration="1900000" />
       <workItem from="1793236822394" duration="2262000" />
-      <workItem from="1793318148892" duration="3552000" />
+      <workItem from="1793318148892" duration="4352000" />
+      <workItem from="1793385880645" duration="2477000" />
+      <workItem from="1793404517401" duration="3723000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Dia 26/10/26">
       <option name="closed" value="true" />
@@ -113,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793240672039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Commit Dia 29/10/26">
+      <option name="closed" value="true" />
+      <created>1793328499255</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793328499255</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,9 +133,11 @@
     <MESSAGE value="Commit Dia 26/10/26" />
     <MESSAGE value="Commit Dia 27/10/26" />
     <MESSAGE value="Commit Dia 28/10/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 28/10/26" />
+    <MESSAGE value="Commit Dia 29/10/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 29/10/26" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_29_10.coverage" NAME="Atividade_29-10 Coverage Results" MODIFIED="1793328474106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_24_10.coverage" NAME="Atividade_24-10 Coverage Results" MODIFIED="1792956871820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_26_10.coverage" NAME="Atividade_26-10 Coverage Results" MODIFIED="1793068580116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_25_10.coverage" NAME="Atividade_25-10 Coverage Results" MODIFIED="1793064973306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

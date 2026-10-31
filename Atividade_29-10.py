@@ -37,25 +37,65 @@ class Sistema:
                 print("Opção invalida!")
 
     def cadastrar_produto(self):
-        produto = input("Digite o nome do produto: ")
-        quantidade = int(input("Digite a quantidade de produto: "))
-        valor = float(input("Digite o valor do produto: "))
+        while True:
+            try:
+                nome = input("Digite o nome do produto: ")
+                quantidade = int(input("Digite a quantidade de produto: "))
+                valor = float(input("Digite o valor do produto: "))
+                if nome.strip() == "" or quantidade < 0 or valor < 0:
+                    print("Dados invalidos!")
+                else:
+                    break
+            except ValueError:
+                print("Informação invalida!")
+
         novo_produto = {
-            "produto": produto,
+            "nome": nome,
             "quantidade": quantidade,
             "valor": valor
         }
         self.produtos.append(novo_produto)
         print("Produto cadastrado com sucesso!")
-        print(self.produtos)
 
     def listar_produto(self):
-        pass
+        print("Produtos cadastrados:")
+        for produto in self.produtos:
+            print(produto)
+        print("---------------")
+
     def buscar_produto(self):
-        pass
+        encontrado = False
+        nome = input("Digite o nome do produto: ").lower()
+        for produto in self.produtos:
+            if produto["nome"] == nome:
+                encontrado = True
+                print(produto)
+        if not encontrado:
+            print("Produto não encontrado!")
+
     def atualizar_produto(self):
-        pass
+        nome = input("Digite o nome do produto que deseja atualizar: ").lower()
+        print("Qual informação deseja atualizar?")
+        print("1 - Nome")
+        print("2 - Quantidade")
+        print("3 - Valor")
+        c = int(input("Escolha uma opção: "))
+        if c == 1:
+
+
+
     def remover_produto(self):
-        pass
+        removido = False
+        nome = input("Digite o nome do produto: ").lower()
+        for produto in self.produtos:
+            if produto["nome"] == nome:
+                self.produtos.remove(produto)
+                removido = True
+                break
+        if removido:
+            print("Produto removido com sucesso!")
+        else:
+            print("Produto não encontrado!")
+
     def consultar_estoque(self):
         pass
