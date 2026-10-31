@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 29/10/26">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 30/10/26">
       <change beforePath="$PROJECT_DIR$/Atividade_29-10.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade_29-10.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <workItem from="1793236822394" duration="2262000" />
       <workItem from="1793318148892" duration="4352000" />
       <workItem from="1793385880645" duration="2477000" />
-      <workItem from="1793404517401" duration="3723000" />
+      <workItem from="1793404517401" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Dia 26/10/26">
       <option name="closed" value="true" />
@@ -123,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793328499255</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit Dia 30/10/26">
+      <option name="closed" value="true" />
+      <created>1793415330620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793415330620</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +141,8 @@
     <MESSAGE value="Commit Dia 27/10/26" />
     <MESSAGE value="Commit Dia 28/10/26" />
     <MESSAGE value="Commit Dia 29/10/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 29/10/26" />
+    <MESSAGE value="Commit Dia 30/10/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 30/10/26" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_29_10.coverage" NAME="Atividade_29-10 Coverage Results" MODIFIED="1793328474106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

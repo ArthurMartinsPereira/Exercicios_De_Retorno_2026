@@ -75,13 +75,19 @@ class Sistema:
 
     def atualizar_produto(self):
         nome = input("Digite o nome do produto que deseja atualizar: ").lower()
-        print("Qual informação deseja atualizar?")
-        print("1 - Nome")
-        print("2 - Quantidade")
-        print("3 - Valor")
-        c = int(input("Escolha uma opção: "))
-        if c == 1:
+        encontrado = False
+        for produto in self.produtos:
+            if produto["nome"].lower() == nome:
+                encontrado = True
+                print("Qual informação deseja atualizar?")
+                print("1 - Nome")
+                print("2 - Quantidade")
+                print("3 - Valor")
+                c = int(input("Escolha uma opção: "))
+                if c == 1:
 
+        if not encontrado:
+            print("Produto não encontrado!")
 
 
     def remover_produto(self):
