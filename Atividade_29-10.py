@@ -58,16 +58,22 @@ class Sistema:
         print("Produto cadastrado com sucesso!")
 
     def listar_produto(self):
-        print("Produtos cadastrados:")
+        print("--- Produtos cadastrados ---")
+        if not self.produtos:
+            print("Nenhum produto cadastrado!")
+            return
         for produto in self.produtos:
-            print(produto)
-        print("---------------")
+            print(f"Nome: {produto['nome']}")
+            print(f"Quantidade em estoque: {produto['quantidade']}")
+            print(f"Valor unitário: R$ {produto['valor']:.2f}")
+            print(f"Valor total do estoque: R$ {produto['valor'] * produto['quantidade']:.2f}")
+        print(f"\n------------------------------")
 
     def buscar_produto(self):
         encontrado = False
         nome = input("Digite o nome do produto: ").lower()
         for produto in self.produtos:
-            if produto["nome"] == nome:
+            if produto["nome"].lower() == nome:
                 encontrado = True
                 print(produto)
         if not encontrado:
@@ -85,6 +91,39 @@ class Sistema:
                 print("3 - Valor")
                 c = int(input("Escolha uma opção: "))
                 if c == 1:
+                    try:
+                        new_nome = input("Digite o novo nome do produto: ")
+                        if not new_nome.strip() == "":
+                            produto["nome"] = new_nome
+                            break
+                        else:
+                            print("Nome inválido!")
+                    except ValueError:
+                        print("Nome inválido!")
+
+                elif c == 2:
+                    try:
+                        new_quant = int(input("Digite a nova quantidade de produto: "))
+                        if new_quant >= 0:
+                            produto["quantidade"] = new_quant
+                            break
+                        else:
+                            print("Quantidade inválida!")
+                    except ValueError:
+                        print("Quantidade inválida!")
+
+                elif c == 3:
+                    try:
+                        new_valor = float(input("Digite o novo valor do produto: "))
+                        if new_valor >= 0:
+                            produto["valor"] = new_valor
+                            break
+                        else:
+                            print("Valor inválido!")
+                    except ValueError:
+                        print("Valor inválido!")
+                else:
+                    print("Opção invalida!")
 
         if not encontrado:
             print("Produto não encontrado!")
@@ -94,7 +133,7 @@ class Sistema:
         removido = False
         nome = input("Digite o nome do produto: ").lower()
         for produto in self.produtos:
-            if produto["nome"] == nome:
+            if produto["nome"].lower() == nome:
                 self.produtos.remove(produto)
                 removido = True
                 break
@@ -104,4 +143,7 @@ class Sistema:
             print("Produto não encontrado!")
 
     def consultar_estoque(self):
-        pass
+        val_estoque = 0
+        for produto in self.produtos:
+            val_estoque += produto["valor"] * produto["quantidade"]
+        print(f"O valor total do estoque é: R${val_estoque}")
