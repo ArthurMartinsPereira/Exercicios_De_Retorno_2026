@@ -75,7 +75,10 @@ class Sistema:
         for produto in self.produtos:
             if produto["nome"].lower() == nome:
                 encontrado = True
-                print(produto)
+                print(f"Nome: {produto['nome']}")
+                print(f"Quantidade em estoque: {produto['quantidade']}")
+                print(f"Valor unitário: R$ {produto['valor']:.2f}")
+                print(f"Valor total do estoque: R$ {produto['valor'] * produto['quantidade']:.2f}")
         if not encontrado:
             print("Produto não encontrado!")
 
@@ -147,3 +150,6 @@ class Sistema:
         for produto in self.produtos:
             val_estoque += produto["valor"] * produto["quantidade"]
         print(f"O valor total do estoque é: R${val_estoque}")
+
+sis = Sistema()
+sis.options()
