@@ -15,6 +15,11 @@ class Sistema:
                 self.produtos = json.load(arquivo)
         except FileNotFoundError:
             self.produtos = []
+
+        except json.JSONDecodeError:
+            print("Arquivo danificado ou corrompido!")
+            self.produtos = []
+
     def options(self):
         while True:
             print("\n === Sistema de Produtos ===")
@@ -104,43 +109,47 @@ class Sistema:
                 print("1 - Nome")
                 print("2 - Quantidade")
                 print("3 - Valor")
-                c = int(input("Escolha uma opção: "))
-                if c == 1:
-                    try:
-                        new_nome = input("Digite o novo nome do produto: ")
-                        if not new_nome.strip() == "":
-                            produto["nome"] = new_nome
-                            self.salvar_produtos()
-                            break
-                        else:
+                try:
+                    c = int(input("Escolha uma opção: "))
+                    if c == 1:
+                        try:
+                            new_nome = input("Digite o novo nome do produto: ")
+                            if not new_nome.strip() == "":
+                                produto["nome"] = new_nome
+                                print("Produto atualizado com sucesso!")
+                                break
+                            else:
+                                print("Nome inválido!")
+                        except ValueError:
                             print("Nome inválido!")
-                    except ValueError:
-                        print("Nome inválido!")
 
-                elif c == 2:
-                    try:
-                        new_quant = int(input("Digite a nova quantidade de produto: "))
-                        if new_quant >= 0:
-                            produto["quantidade"] = new_quant
-                            self.salvar_produtos()
-                            break
-                        else:
+                    elif c == 2:
+                        try:
+                            new_quant = int(input("Digite a nova quantidade de produto: "))
+                            if new_quant >= 0:
+                                produto["quantidade"] = new_quant
+                                print("Produto atualizado com sucesso!")
+                                break
+                            else:
+                                print("Quantidade inválida!")
+                        except ValueError:
                             print("Quantidade inválida!")
-                    except ValueError:
-                        print("Quantidade inválida!")
 
-                elif c == 3:
-                    try:
-                        new_valor = float(input("Digite o novo valor do produto: "))
-                        if new_valor >= 0:
-                            produto["valor"] = new_valor
-                            self.salvar_produtos()
-                            break
-                        else:
+                    elif c == 3:
+                        try:
+                            new_valor = float(input("Digite o novo valor do produto: "))
+                            if new_valor >= 0:
+                                produto["valor"] = new_valor
+                                print("Produto atualizado com sucesso!")
+                                break
+                            else:
+                                print("Valor inválido!")
+                        except ValueError:
                             print("Valor inválido!")
-                    except ValueError:
-                        print("Valor inválido!")
-                else:
+                    else:
+                        print("Opção invalida!")
+
+                except ValueError:
                     print("Opção invalida!")
 
         if not encontrado:
@@ -165,7 +174,7 @@ class Sistema:
         val_estoque = 0
         for produto in self.produtos:
             val_estoque += produto["valor"] * produto["quantidade"]
-        print(f"O valor total do estoque é: R${val_estoque}")
+        print(f"O valor total do estoque é: R$ {val_estoque:.2f}")
 
 sis = Sistema()
 sis.options()
