@@ -84,7 +84,7 @@ class Sistema:
             print(f"Quantidade em estoque: {produto['quantidade']}")
             print(f"Valor unitário: R$ {produto['valor']:.2f}")
             print(f"Valor total do estoque: R$ {produto['valor'] * produto['quantidade']:.2f}")
-        print(f"\n------------------------------")
+            print(f"\n------------------------------")
 
     def buscar_produto(self):
         encontrado = False

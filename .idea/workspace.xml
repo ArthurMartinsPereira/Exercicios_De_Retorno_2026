@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 01/11/26">
-      <change afterPath="$PROJECT_DIR$/Atividades_02-11/Sis_Financeiro.py" afterDir="false" />
+    <list default="true" id="d2a80d6a-b381-49a6-a3a4-474b22d7905c" name="Changes" comment="Commit Dia 02/11/26">
+      <change afterPath="$PROJECT_DIR$/Atividades_02-11/movimentacoes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividade_31-10.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atividade_31-10.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Atividades_02-11/Sis_Financeiro.py" beforeDir="false" afterPath="$PROJECT_DIR$/Atividades_02-11/Sis_Financeiro.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,30 +46,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Atividade_24-10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_25-10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_26-10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_27-10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_29-10.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Atividade_31-10.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;python.packages.toolwindow.project.migrated.to.right.top.v2&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Atividade_24-10.executor": "Run",
+    "Python.Atividade_25-10.executor": "Run",
+    "Python.Atividade_26-10.executor": "Run",
+    "Python.Atividade_27-10.executor": "Run",
+    "Python.Atividade_29-10.executor": "Run",
+    "Python.Atividade_31-10.executor": "Run",
+    "Python.Sis_Financeiro.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "python.packages.toolwindow.project.migrated.to.right.top.v2": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -98,7 +101,9 @@
       <workItem from="1793563703386" duration="1784000" />
       <workItem from="1793587122856" duration="331000" />
       <workItem from="1793656248360" duration="3438000" />
-      <workItem from="1793661643189" duration="1014000" />
+      <workItem from="1793661643189" duration="1100000" />
+      <workItem from="1793757962345" duration="603000" />
+      <workItem from="1793835763935" duration="2084000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Dia 26/10/26">
       <option name="closed" value="true" />
@@ -172,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793587448220</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commit Dia 02/11/26">
+      <option name="closed" value="true" />
+      <created>1793662737448</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1793662737448</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,9 +199,11 @@
     <MESSAGE value="Commit Dia 30/10/26" />
     <MESSAGE value="Commit Dia 31/10/26" />
     <MESSAGE value="Commit Dia 01/11/26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 01/11/26" />
+    <MESSAGE value="Commit Dia 02/11/26" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Dia 02/11/26" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Sis_Financeiro.coverage" NAME="Sis_Financeiro Coverage Results" MODIFIED="1793843447614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Atividades_02-11" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_29_10.coverage" NAME="Atividade_29-10 Coverage Results" MODIFIED="1793473042221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_24_10.coverage" NAME="Atividade_24-10 Coverage Results" MODIFIED="1792956871820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Exercicios_De_Retorno_2026$Atividade_31_10.coverage" NAME="Atividade_31-10 Coverage Results" MODIFIED="1793500664729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
